@@ -1,6 +1,6 @@
     var wordReceived;
     var lengthString;
-    let lifee = 7;
+    let life = 7;
     let counterLetter
 
 function word() { // sohw word hidden and change button function 
@@ -22,7 +22,7 @@ function word() { // sohw word hidden and change button function
     counterLetter = lengthString - 2;
     document.getElementById("btn").innerHTML = "Incearca litera";
     document.getElementById("btn").setAttribute("onclick","letter()");
-    document.getElementById("life").innerHTML = "Numar vieti: " + lifee;
+    document.getElementById("life").innerHTML = "Numar vieti: " + life;
 }
 
 function letter() { // check every letter and letter completion
@@ -41,14 +41,14 @@ function letter() { // check every letter and letter completion
             }          
         }  
         if (check == 0) {
-            --lifee;
+            --life;
         }        
         if (counterLetter == 0) {
             document.getElementById("endGame").innerHTML = "Felicitari ai castigat!"
         }
-        if (lifee == 0) {
+        if (life == 0) {
             document.getElementById("endGame").innerHTML = "Ai pierdut."
         }
-        document.getElementById("life").innerHTML = "Numar vieti: " + lifee;
+        document.getElementById("life").innerHTML = "Numar vieti: " + life;
     }
 }

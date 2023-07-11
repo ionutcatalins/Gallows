@@ -10,8 +10,7 @@ function word() { // sohw word hidden and change button function
    
     for (let i = 0; i < lengthString; ++i) {
         let generate = document.createElement(type="text")
-        generate.id = i;
-        
+        generate.id = i;        
         if(i == 0) {
             $('#words').append('<text id=' + i +' > ' + wordReceived[i] + ' ' + '</text>');
         } else if (i < lengthString - 1) {
@@ -19,14 +18,12 @@ function word() { // sohw word hidden and change button function
         } else if (i == lengthString - 1) {
             $('#words').append('<text id=' + i +' > ' + wordReceived[i] + '</text>');
         }
-    }
-   
+    }   
     counterLetter = lengthString - 2;
     document.getElementById("btn").innerHTML = "Incearca litera";
     document.getElementById("btn").setAttribute("onclick","letter()");
     document.getElementById("life").innerHTML = "Numar vieti: " + lifee;
 }
-
 
 function letter() { // check every letter and letter completion
     let letter = document.getElementById("in").value;

@@ -1,7 +1,7 @@
     var wordReceived;
     var lengthString;
     let life = 7;
-    let counterLetter
+    let counterLetter;
 
 function word() { // sohw word hidden and change button function 
     wordReceived = document.getElementById("in").value
@@ -29,7 +29,7 @@ function letter() { // check every letter and letter completion
     let letter = document.getElementById("in").value;
     let lengthLetter = letter.length;
     if(letter == "" || lengthLetter != 1) {
-        alert("Nu ati introdus litera sau ati introdus mai mult de o litera");
+        alert("Nu ati introdus litera sau s-a introdus mai mult de o litera");
     } else {
         let check = 0;   
         document.getElementById("in").value = ""  
